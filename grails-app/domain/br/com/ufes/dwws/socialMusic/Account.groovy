@@ -13,5 +13,7 @@ class Account {
         email(nullable: false,unique: true)
         password(nullable: false,unique: true)
 
+        profile(nullable: true)
+
     }
 }
