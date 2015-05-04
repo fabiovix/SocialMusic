@@ -6,14 +6,9 @@ class Account {
     String password
     String email
 
-    Profile profile
-
     static constraints = {
         login(nullable: false, unique: true)
         email(nullable: false,unique: true)
         password(nullable: false,unique: true)
-
-        profile(nullable: true)
-
     }
 }
