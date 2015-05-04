@@ -22,22 +22,16 @@
 			</g:if>
 			<table>
 			<thead>
-					<tr>
-					
-						<th><g:message code="music.album.label" default="Album" /></th>
-					
-						<g:sortableColumn property="name" title="${message(code: 'music.name.label', default: 'Name')}" />
-					
-					</tr>
-				</thead>
+				<tr>
+					<g:sortableColumn property="name" title="${message(code: 'music.name.label', default: 'Name')}" />
+					<th><g:message code="music.album.label" default="Album" /></th>
+				</tr>
+			</thead>
 				<tbody>
 				<g:each in="${musicInstanceList}" status="i" var="musicInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
-					
-						<td><g:link action="show" id="${musicInstance.id}">${fieldValue(bean: musicInstance, field: "album")}</g:link></td>
-					
-						<td>${fieldValue(bean: musicInstance, field: "name")}</td>
-					
+						<td><g:link action="show" id="${musicInstance.id}">${fieldValue(bean: musicInstance, field: "name")}</g:link></td>
+						<td>${fieldValue(bean: musicInstance, field: "album.name")}</td>
 					</tr>
 				</g:each>
 				</tbody>

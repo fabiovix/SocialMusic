@@ -33,7 +33,7 @@
 					<li class="current"><g:link uri="/"><g:message code="default.button.home.label" default="Início"/></g:link></li>
 					<li><g:link uri="/profile/"><g:message code="default.button.profile.label" default="Profile"/></g:link></li>
 					<li><g:link uri="/album"><g:message code="default.button.myAlbum.label" default="Albuns"/></g:link></li>
-					<li><g:link uri="/band"><g:message code="default.button.myBands.label" default="Bandas"/></g:link></li>
+					<li><g:link uri="/authorship"><g:message code="default.button.myBands.label" default="Bandas"/></g:link></li>
 					<li ><g:link uri="/music"><g:message code="default.button.myMusics.label" default="Musicas"/></g:link></li>
 					<li ><g:link uri="/account/signOut">Sair</g:link></li>
 				</g:if>

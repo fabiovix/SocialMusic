@@ -27,8 +27,8 @@
 				<li class="fieldcontain">
 					<span id="album-label" class="property-label"><g:message code="music.album.label" default="Album" /></span>
 					
-						<span class="property-value" aria-labelledby="album-label"><g:link controller="album" action="show" id="${musicInstance?.album?.id}">${musicInstance?.album?.encodeAsHTML()}</g:link></span>
-					
+						<span class="property-value" aria-labelledby="album-label"><g:link controller="album" action="show" id="${musicInstance?.album?.id}">${musicInstance?.album?.name}</g:link></span>
+
 				</li>
 				</g:if>
 			
